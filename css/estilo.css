@@ -1,0 +1,302 @@
+div.secTop img {
+  max-width: 100%;
+}
+
+.comprar {
+  font-size: 16px; 
+  color: rgb(99, 226, 25);}
+section a h4 {
+  font-size: 20px; 
+  color: red;}
+.antojo {
+  text-align: center; 
+  font-size: 32px; 
+  color: rgb(3, 3, 3);}
+.parrafos {font-size: 16px;}
+main .recetas {color:rgb(119, 6, 21);}
+.carrotcake {
+  width: 15%; 
+  position: relative;
+      top: 0px;
+}
+.mision {
+  color: rgb(182, 129, 129); 
+  font-size: 16px; 
+  background-color: rgb(241, 215, 63);}
+.tablaPostres {color: darkblue;}
+
+.subrayado {text-decoration: none;}
+.parallaxBrownie {
+  background-image: url(../assets/img/Torre\ de\ brownies.jpeg); 
+  height: 600px; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed;
+}
+.parallaxBrownie h2, .parallaxBrownie p {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.parallaxCarrot {
+  background-image: url(../assets/img/Carrot\ cake.jpeg); 
+  height: 600px; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed;
+  padding: 50px 30px;
+  margin-bottom: 50px;
+}
+/* article.parallaxCarrot div {
+  background-color: rgba(255, 255, 255, 0.7);
+} */
+.parallaxCarrot h4, .parallaxCarrot ol, .parallaxCarrot ul {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+body header {font-family: 'Montserrat', sans-serif;}
+body section {font-family: 'Montserrat', sans-serif; font-weight: 500;}
+.parallaxTorta {
+  background-image: url(../assets/img/Torta\ de\ chocolate.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 40%;
+  background-attachment: fixed;
+  height: 900px ;
+  padding: 50px 30px;
+  margin-bottom: 50px;
+}
+.parallaxTorta h4, .parallaxTorta ol, .parallaxTorta ul {background-color: rgba(255, 255, 255, 0.7);}
+
+body section {
+  position: relative;
+}
+.fotoPrincipal {
+  width: 400px;
+  height: 300px;
+  position: relative;
+      left: 35px;
+  border: solid rgb(3, 3, 3);
+  
+}
+.cookiePrincipal {
+  width: 400px;
+  height: 300px;
+  position: relative;
+      left: 70px;
+      bottom: 0;
+  border: solid rgb(3, 3, 3);
+}
+.tortaPrincipal{
+  width: 360px;
+  height: 300px;
+  position: relative;
+      left: 105px;
+      bottom: 0;
+  border: solid rgb(3, 3, 3); 
+}
+.imagenesPrincipales {
+  margin: 30px 0;
+}
+article.imagenesPrincipales h2 {
+  display: inline-block;
+}
+.tituloBrownie {
+  position: relative;
+      left: 35px;
+  border: solid black;
+  padding: 20px 101px;
+  margin-top: 0;
+  }
+.tituloCookie{
+  position: relative;
+      left: 70px;
+  border: solid black;
+  padding: 20px 53px;
+  margin-top: 0;
+}
+.tituloTorta{
+  position: relative;
+      left: 105px;
+  border: solid black; 
+  padding: 20px 63px;
+  margin-top: 0;
+}
+h4.instagram {
+  display: inline-block;
+  position: relative;
+      bottom: 30px;
+}
+.logoInstagram {
+  display: inline-block;
+  width: 6%;
+  height: 6%;
+}
+.fotoInstagram1{
+  display: inline-block;
+  width: 10%;
+  height: 10%;
+  position: relative;
+      left: 90px;
+}
+.fotoInstagram2 {
+  display: inline-block;
+  width: 10%;
+  height: 10%;
+  position: relative;
+      left: 370px;
+}
+.fotoInstagram3 {
+  display: inline-block;
+  width: 10%;
+  height: 10%;
+  position: relative;
+      left: 650px;
+}
+.cookie img {
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+}
+.cookie h4 {
+  display: inline-block;
+  position: relative;
+      bottom: 250px;
+      left: 30px;
+  font-size: 20px;
+}
+.cookie p{
+  display: inline-block;
+  position: relative;
+      bottom: 180px;
+      left: -220px;
+  width: 60%;
+  text-align: justify;
+}
+.carrot img {
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+  position: relative;
+      bottom: 0px;
+      left: 900px;
+}
+.carrot h4{
+  text-align: end;
+  position: relative;
+      bottom: 350px;
+      right: 480px;
+  font-size: 20px;
+}
+.carrot p {
+  text-align: justify;
+  display: inline-block;
+  width: 60%;
+  position: relative;
+      bottom: 380px;
+      left: 50px;
+}
+
+/* Inicio header con Flex */
+.cabecera {
+  background-color:white;
+  display: flex;
+      flex-direction: row;
+  position: sticky;
+      top: 0;
+  z-index: 1;
+}
+.cabecera a.titulo h1{
+  flex-basis: 45%;
+  font-size: 40px; 
+  color: rgb(131, 57, 14);
+  text-align: center;
+  text-decoration: none; /*no entiendo por qué no me toma este*/
+  padding-right: 50px;
+  margin-right: 40px;
+}
+a.titulo {text-decoration: none;}
+.cabecera img {
+  flex-basis: 5%;
+  width: 6%;
+  height: 6%;
+  padding: 13px 5px 13px 50px}
+.cabecera nav ul.listaMenu {
+  width: 800px;
+  display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  list-style-type: none
+}
+ul.listaMenu h2 {
+  text-transform: uppercase; 
+  font-size: 20px; 
+  color: rgb(214, 90, 18);
+  font-weight: 700;
+}
+header nav {
+  border-left: solid rgb(3, 3, 3);
+}
+/* Cierre header con flex */
+/* Inicio footer con flex */
+.flexFoo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  background-image: url(../assets/img/fondo\ negro\ con\ dulces.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 40%;
+  background-attachment: fixed;
+  height: 300px ;
+  padding: 30px;
+}
+.fooTop, .bottomLeft, .bottomCenter, .bottomRight {background-color: rgba(255, 255, 255, 0.7);}
+.fooTop {  
+  margin: 50px 0 20px 0;
+  display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+}
+.topLeft {
+  display: flex;
+      flex-basis: 40%;
+}
+.topRight {
+  display: flex;
+  flex-direction: column;
+      flex-basis: 20%;
+      justify-content: space-around;
+      align-items: center;
+}
+.topRight img {
+  width: 20%;
+  height: 35%;
+}
+.fooBottom {
+  display: flex;
+      flex-direction: row;
+}
+.bottomLeft {
+  display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-basis: 35%;
+}
+.bottomLeft h4 a {
+  text-decoration: none;
+}
+.bottomCenter {
+  display: flex;
+      flex-basis: 30%;
+      justify-content: center;    
+}
+.bottomCenter img {
+  width: 20%;
+}
+.bottomRight {
+  display: flex;
+      flex-direction: column;
+      flex-basis: 35%;
+      align-items: center;
+}
+/* Cierre footer con flex */

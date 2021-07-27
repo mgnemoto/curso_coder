@@ -1,0 +1,331 @@
+$lista: (form1, form2, form3, form4, form5, form6);
+$cien: 100px;
+@for $i from 1 through 10 {
+    .fontsize-#{$i}{font-size: 10px * $i;}
+}
+@for $i from 1 through 10 {
+    .padding-#{$i}{padding: 5% * $i;}
+}
+@media only screen and (min-width: 0) and (max-width:767px){
+    .gridCom{
+        display: grid;
+            grid-template-areas:
+            "head"
+            "img"
+            "form1"
+            "form2"
+            "form3"
+            "form4"
+            "form5"
+            "form6"
+            "footop"
+            "foobot";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto 180px 180px 180px 180px 150px 50px auto 100px;
+    }
+    .head{grid-area: head;}
+    .img{grid-area: img;}
+    @each $form in $lista {
+        .#{$form} {
+            grid-area: #{$form};
+        }
+    }
+    .fooTop{grid-area: footop;}
+    .fooBot{grid-area: foobot;}
+
+    .head {
+        background-size: cover;
+        background-color: rgb(41,55,53);
+        display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        margin: 0 0 1% 0;
+        overflow: hidden;
+        padding-top: 2%;
+        .head__lista {
+            width: 40%;
+            padding-left: 5%;
+            transition: padding 1s;
+            &:hover {
+                border-right: solid #efefef;
+                padding: 0 8%;
+            }
+            li {
+                width: 100%;
+                margin: 1.5% 0;
+                padding: 1.5% 0;
+                transition: border 0.5s;
+                &:hover{
+                    border: solid #efefef;
+                }
+                h2{
+                    padding: 0;
+                    margin: 0;
+                    width: 100%;
+                    font-size: 10px;
+                    color: #efefef;
+                }
+            }
+            
+        }
+        .head__titulo {
+            width: 60%;
+            display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            h1 {
+                width: 50%;
+                font-size: 15px;
+                position: relative;
+                    left: 5%;
+                a {color: #efefef;}
+            }
+            img {
+            width: 25%;
+            max-width: 80px;
+            height: 30%;
+            padding: 0 2% ;}
+        }  
+    }
+
+    // .parallax{
+    //     transition: background-image 30s;
+    //     &:hover{
+    //     background-image:url("../assets/img/Tortas/Carrot\ cake\ con\ logo.jpeg");
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     background-attachment: fixed;
+    //     background-position: center;
+    //     height: 200px;
+    //     max-width: 100%;}
+    // }
+    
+    .forms{
+        margin: 0;
+        padding: 0 0 0 0;
+        font-size: $cien/7.5;
+        height: $cien;
+        max-width: 100%;
+        display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+    }
+
+    .movimiento{
+        transition: padding 1s;
+        &:hover{
+        padding: 7%;
+    }}
+
+
+
+    .fooTopM {
+        background-color: rgb(41,55,53);
+        .fooTopM__lista{
+            padding: 2% 0 0 0;
+            margin: 0;
+            list-style-type: none;
+            display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+        }
+        .fooTopM__topImgM {
+            display: flex;
+                flex-direction: row;
+                justify-content: center;
+            img {
+                width: 40px;
+                filter: grayscale(100%);
+                transition: filter 0.4s;
+                &:hover{
+                    filter: grayscale(0%);
+                }
+            }
+        }
+        h2 {
+            color: #efefef;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 5% 0;
+        }
+    }
+    .fooBotM {
+        display: flex;
+            align-items: center;
+        background-color: rgb(41,55,53);
+        margin-top: 1px;
+        overflow: hidden;
+        h4{
+            color: #efefef;
+            padding: 20px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media only screen and (min-width: 767px){
+    .gridCom{
+        display: grid;
+            grid-template-areas:
+            "head"
+            "img"
+            "form1"
+            "form2"
+            "form3"
+            "form4"
+            "form5"
+            "form6"
+            "footop"
+            "foobot";
+        grid-template-columns: 100%;
+        grid-template-rows: 170px auto auto auto auto auto auto auto 220px 100px;
+    }
+    .head{grid-area: head;}
+    .img{grid-area: img;}
+    @each $form in $lista {
+        .#{$form} {
+            grid-area: #{$form};
+        }
+    }
+    .fooTop{grid-area: footop;}
+    .fooBot{grid-area: foobot;}
+
+    .head {
+        background-size: cover;
+        background-color: rgb(41,55,53);
+        display: flex;
+            flex-direction: column-reverse;
+        margin: 0 0 1% 0;
+        overflow: hidden;
+        .head__lista {
+            padding: 2% 1% 1% 1%;
+            margin: 0;
+            width: 100%;
+            display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            transition: border-top 0.5s;
+            &:hover {
+                border-top: solid #efefef;
+            }
+            li {transition: transform 0.4s;
+                &:hover {transform: translateY(-7%);}
+                h2{
+                    width: 100%;
+                    font-size: 17px;
+                    color: #efefef;
+                }
+            }
+        }
+        .head__titulo {
+            display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            height: 60px;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+            h1 {
+                width: 25%;
+                font-size: 25px;
+                color: #efefef;
+            }
+        }
+    }
+    .limit {height: 600px;}
+    .img {
+        margin-bottom: 1.5%;
+        img{width: 100%;}
+        div{
+            display: flex;
+                flex-direction: column;
+                justify-content: center;
+            background-color: rgb(251,245,238);
+            padding: 4% 2%;
+            height: 190px; 
+            h5{
+                padding: 3% 0 2% 5%;
+                font-size: 25px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 19px;
+                font-weight: 600;
+            }       
+        }
+    }
+    .fooTopM {
+        background-color: rgb(41,55,53);
+        .fooTopM__lista{
+            padding: 2% 0 0 0;
+            margin: 0;
+            list-style-type: none;
+            display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+        }
+        .fooTopM__topImgM {
+            display: flex;
+                flex-direction: row;
+                justify-content: center;
+            img {
+                width: 40px;
+                filter: grayscale(100%);
+                transition: filter 0.4s;
+                &:hover{
+                    filter: grayscale(0%);
+                }
+            }
+        }
+        h2 {
+            color: #efefef;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 5% 0;
+        }
+    }
+    .fooBotM {
+        display: flex;
+            align-items: center;
+        background-color: rgb(41,55,53);
+        margin-top: 1px;
+        overflow: hidden;
+        h4{
+            color: #efefef;
+            padding: 20px;
+            font-size: 12px;
+        }
+    }
+    .menu__lista{
+        display: flex;
+            justify-content: space-around;
+        a{
+            font-weight: 600;
+        }
+    }
+    .mCard{
+        width: 96%;
+        margin: 2%;
+        h5{
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+}
+.form1 img
+{width: 10%;
+height: 50%;
+padding: 0;}
+body {font-family: 'Montserrat', sans-serif}
+header.head ul {
+    list-style-type:none ;
+    text-transform: uppercase;
+}
+header.head a, div.fooTop ul a {
+    text-decoration: none;}
